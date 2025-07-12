@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Business Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 0.3rem;
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .product-card h3 {
+      margin: 0.8rem 0 0.4rem;
+    }
+
+    .product-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .contact-links {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: 0.3s ease;
+    }
+
+    .whatsapp { background: #25D366; color: white; }
+    .email { background: #007bff; color: white; }
+    .facebook { background: #3b5998; color: white; }
+
+    .contact-links a:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 500px) {
+      header h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Business</h1>
+    <p>Quality products just for you</p>
+  </header>
+
+  <div class="container">
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product 1">
+        <h3>Product Title 1</h3>
+        <p>This is a short description of the product. It's beautiful and affordable.</p>
+        <div class="contact-links">
+          <a href="https://wa.me/254700000000?text=I'm%20interested%20in%20Product%201" class="whatsapp">WhatsApp</a>
+          <a href="mailto:yourname@email.com?subject=Interested%20in%20Product%201" class="email">Email</a>
+          <a href="https://facebook.com/yourpage" class="facebook">Facebook</a>
+        </div>
+      </div>
+      <!-- Duplicate and modify this block for more products -->
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 My Business. All rights reserved.
+  </footer>
+</body>
+</html>

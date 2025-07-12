@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Sunrise Chicken Farm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f6fdf6;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #70a800;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-size: 1.4em;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ffd700;
+    }
+
+    .navbar input[type="checkbox"] {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5em;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar ul {
+        width: 100%;
+        flex-direction: column;
+        background-color: #70a800;
+        display: none;
+        margin-top: 10px;
+      }
+
+      .navbar input:checked ~ ul {
+        display: flex;
+      }
+
+      .navbar ul li {
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
+
+    .contact-section {
+      max-width: 700px;
+      margin: auto;
+      padding: 40px 20px;
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .contact-section h1 {
+      text-align: center;
+      color: #70a800;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      text-align: center;
+      font-size: 1.05em;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .contact-links a {
+      text-decoration: none;
+      background-color: #70a800;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+
+    .contact-links a:hover {
+      background-color: #5c9100;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Chicken Farm</div>
+    <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+    <input type="checkbox" id="menu-toggle" />
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Feel free to reach out to us through any of the platforms below.</p>
+    <div class="contact-links">
+      <a href="tel:+254759130506">📞 Call Us: +254 759 130 506</a>
+      <a href="mailto:castrodhiambo3@gmail.com">📧 Email: castrodhiambo3@gmail.com</a>
+      <a href="https://wa.me/254759130506?text=Hello%2C%20I'm%20interested%20in%20your%20products%20from%20Sunrise%20Chicken%20Farm">💬 Chat on WhatsApp</a>
+      <a href="https://facebook.com/YourFarmPage">📘 Visit our Facebook Page</a>
+    </div>
+  </section>
+
+</body>
+</html>

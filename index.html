@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Sunrise Chicken Farm</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f6fdf6;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #70a800;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      flex-wrap: wrap;
+    }
+
+    .navbar .logo {
+      font-size: 1.4em;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ffd700;
+    }
+
+    .navbar input[type="checkbox"] {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5em;
+      color: white;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar ul {
+        width: 100%;
+        flex-direction: column;
+        background-color: #70a800;
+        display: none;
+        margin-top: 10px;
+      }
+
+      .navbar input:checked ~ ul {
+        display: flex;
+      }
+
+      .navbar ul li {
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1625595235241-7d7c9266eb07?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 80vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      margin-top: 10px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+
+    .btn-primary {
+      margin-top: 20px;
+      background-color: #ffd700;
+      color: #333;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #e6be00;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+      background-color: #ffffff;
+    }
+
+    .feature-box {
+      background-color: #f0ffe0;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-box h3 {
+      color: #70a800;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .welcome-section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .welcome-section h2 {
+      font-size: 2em;
+      color: #70a800;
+      margin-bottom: 20px;
+    }
+
+    .welcome-section p {
+      font-size: 1.1em;
+      color: #444;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Chicken Farm</div>
+    <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+    <input type="checkbox" id="menu-toggle" />
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Sunrise Chicken Farm</h1>
+    <p>Raising healthy poultry with care, passion, and commitment to quality.</p>
+    <a href="products.html" class="btn-primary">Explore Our Products</a>
+  </section>
+
+  <section class="welcome-section">
+    <h2>Welcome to Sunrise Chicken Farm</h2>
+    <p>We are a trusted poultry farm based in Kenya, dedicated to raising top-quality broilers and producing fresh farm eggs. With a clean environment and expert care, our birds are healthy, our eggs are fresh, and our customers are always satisfied. Whether you're a household, a hotel, or a wholesaler — we are ready to serve you.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>Healthy Broilers</h3>
+      <p>Our broilers are raised with proper nutrition, regular vet care, and plenty of clean space.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Fresh Farm Eggs</h3>
+      <p>Collected daily from free-range hens, our eggs are clean, nutritious, and ready for sale.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Reliable Delivery</h3>
+      <p>We offer timely and reliable delivery to local markets, homes, schools, and restaurants.</p>
+    </div>
+  </section>
+
+</body>
+</html>
